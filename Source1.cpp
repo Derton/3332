@@ -1,5 +1,5 @@
 #include <stdio.h>
 int main() {
-	printf("%d" ’ей);
+	printf("%d" Heh);
 		return 0;
 }
