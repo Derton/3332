@@ -54,7 +54,7 @@ double end()
 	@example функция возвращает деление числа а на число b,в котором число а-делимое, а b-делитель
 	@throws
 	*/
-	double div(double a, double b,int error)
+	double div(double a, double b,int *error)
 		if (0 == b) {
 			error = 1;
 			return 0;
@@ -95,5 +95,28 @@ double arif_progr(double a, double b)
 	*/
 	double sqr(double a) {
 		return sqrt(a);
+	}
+}
+int main() {
+	double a, b, sum;
+	int error;
+	char sim;
+	while{
+		case '+':
+		printf("%d + %d = %d/n", a, b, a + b);
+		break;
+		case '-':
+			printf("%d - %d = %d/n", a, b, a - b);
+			break;
+		case '*':
+			printf("%d * %d = %d/n", a, b, a * b);
+			break;
+		case '/':
+			if ( 0 == b) printf("Tyt bydet oshibka")
+			else printf("%d + %d = %d/n", a, b, a + b);
+			break;
+		case '%':
+			printf("%d % %d = %d/n",a,b,a % b = sum)
+
 	}
 }
