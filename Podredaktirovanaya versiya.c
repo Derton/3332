@@ -76,7 +76,6 @@ double end()
 		 return a % b;
 	 }
 }
-double arif_progr(double a, double b)
 {
 	/*
 	@param double a,double b
@@ -84,6 +83,15 @@ double arif_progr(double a, double b)
 	@example
 	@throws
 	*/
+	 double arif_progr(double a, double b)
+		 int sum, yer
+	 {
+		 for (double i = a; i < n; a + b) {
+			 sum = sum + a;
+			 yer = yer * a;
+			 return sum, yer;
+		 }
+	 }
 
 }
 {
@@ -107,7 +115,7 @@ int main() {
 		break;
 		case '-':
 			printf("%d - %d = %d/n", a, b, a - b);
-			break;
+			break:
 		case '*':
 			printf("%d * %d = %d/n", a, b, a * b);
 			break;
