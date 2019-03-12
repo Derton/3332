@@ -10,7 +10,6 @@
 */
 #include <stdio.h>
 #include <math.h>
-int n = 0;
 double end()
 {
 	return 0;
@@ -69,5 +68,15 @@ double arif_progr(double a, double b)
 	@example
 	@throws
 	*/
-	
+
+}
+double sqr(double a)
+{
+	/*
+	@param double a
+	@return	sqrt(a)
+	@example функция возвращает значение квадратного корня из а
+	@throws
+	*/
+	return sqrt(a)
 }
