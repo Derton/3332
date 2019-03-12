@@ -122,7 +122,7 @@ int main() {
 				break;
 		case "%": rod(a, b);
 			break;
-		case "E":exit();
+		case "E":end();
 			break;
 		default:
 			return 0;
