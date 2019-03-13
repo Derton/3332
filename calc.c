@@ -55,11 +55,7 @@ double end()
 	*/
 	double div(double a, double b, int *error)
 		if (0 == b) {
-<<<<<<< HEAD
 			*error = 1;
-=======
-			error = 1;
->>>>>>> c4cdc8c988b8e9c9ce096ab3aa509e1f2f7f46f5
 			return 0;
 		}
 	return a / b;
@@ -89,7 +85,7 @@ double end()
 	double arif_progr(double a, double b)
 		int sum, yer
 	{
-		for (double i = a; i < n; a + b) {
+		for (int i = a; i < n; a + b) {
 			sum = sum + a;
 			yer = yer * a;
 			return sum, yer;
@@ -112,7 +108,6 @@ int main() {
 	int err;
 	double a, b;
 	char sim;
-<<<<<<< HEAD
 	err = -1;
 	while(sum != "S"){
 		scanf("%f %c %f", &a,&sum,&b);
@@ -134,27 +129,13 @@ int main() {
 					}
 				printf("%f / %f = %f", a, b, a / b);
 				break;
-=======
-	while(sum != "S"){
-		scanf("%f %c %f", &a,&sum,&b);
-		switch(sum){
-		case '+':
-			printf("%f + %f = %f", a, b, a + b)
-				break;
-		case '-':
-			printf("%f - %f = %f", a, b, a - b)
-				break;
-		case '*':
-			printf("%f * %f = %f", a, b, a * b)
-				break;
-		case "%": rod(a, b);
-			break;
-		case "E":end();
-			break;
-		default:
-			return 0;
-			break;
-		}
->>>>>>> c4cdc8c988b8e9c9ce096ab3aa509e1f2f7f46f5
+			case '%':
+				double rod(double a, double b, int *error) {
+					if (0 == b) {
+						**error = 1;
+						return 0;
+					}
+				printf("%f % %f = %f", a, b, a % b);
+					break;
 	}
 }
