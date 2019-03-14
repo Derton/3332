@@ -82,10 +82,7 @@ double end()
 	*/
 	double arif_progr(double a, double b)
 	{
-<<<<<<< HEAD:sosach.c
 		int sum, yer
-=======
->>>>>>> 4093a32b6548efbb626f4429aea10dbf7ec9c942:calc.c
 		for (int i = a; i < n; a + b) {
 			sum = sum + a;
 			yer = yer * a;
@@ -113,19 +110,11 @@ double end()
 int main() {
 	int err;
 	double a, b;
-<<<<<<< HEAD:sosach.c
 	char sum;
 	err = -1;
 	while(sum != "S"){
 		scanf("%f %c %f", &a,&sum,&b);
 		switch(return 0){
-=======
-	char sim;
-	err = -1;
-	while(sum != "S"){
-		scanf("%f %c %f", &a,&sum,&b);
-		switch(sum){
->>>>>>> 4093a32b6548efbb626f4429aea10dbf7ec9c942:calc.c
 			case '+':
 				printf("%f + %f = %f", a, b, a + b)
 				break;
@@ -138,11 +127,7 @@ int main() {
 			case '/':
 				double div(double a, double b, int *error)
 					if (0 == b) {
-<<<<<<< HEAD:sosach.c
 						*error = -1;
-=======
-						*error = 1;
->>>>>>> 4093a32b6548efbb626f4429aea10dbf7ec9c942:calc.c
 						return 0;
 					}
 				printf("%f / %f = %f", a, b, a / b);
@@ -150,11 +135,7 @@ int main() {
 			case '%':
 				double rod(double a, double b, int *error) {
 					if (0 == b) {
-<<<<<<< HEAD:sosach.c
 						**error = -1;
-=======
-						**error = 1;
->>>>>>> 4093a32b6548efbb626f4429aea10dbf7ec9c942:calc.c
 						return 0;
 					}
 				printf("%f % %f = %f", a, b, a % b);
