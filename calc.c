@@ -49,13 +49,15 @@ double end()
 	@param double a,double b
 	@return -1 a/b
 	@example функция возвращает деление числа а на число b,в котором число а-делимое, а b-делитель
-	@throws
+	@throws error = 0 -ошибок нет; error = 1 ошибки есть
 	*/
 	double div(double a, double b, int *error)
 		if (0 == b) {
-			*error = 1;
+			*error = 0;
 			return 0;
 		}
+		*error = 1;
+
 	return a / b;
 }
 {
@@ -96,7 +98,7 @@ double end()
 	@param double a
 	@return	sqrt(a)
 	@example функция возвращает значение квадратного корня из а
-	@throws
+	@throws error = 0 -ошибок нет; error = 3 есть
 	*/
 	double sqr(double a, int *error) {
 		if (a > 0) {
