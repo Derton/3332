@@ -110,13 +110,15 @@ double end()
 	}
 }
 int main() {
-	int err;
+	int err = 0;
 	double a, b;
 	char sum;
+	int resInt = 0;
+	double resDouble = 0;
 	err = -1;
 	while(sum != "S"){
 		scanf("%f %c %f", &a,&sum,&b);
-		switch(return 0){
+		switch(sum){
 			case '+':
 				printf("%f + %f = %f", a, b, a + b)
 				break;
@@ -127,21 +129,15 @@ int main() {
 				printf("%f * %f = %f", a, b, a * b)
 				break;
 			case '/':
-				double div(double a, double b, int *error)
-					if (0 == b) {
-						*error = -1;
-						return 0;
-					}
-				printf("%f / %f = %f", a, b, a / b);
+				resDouble = division(a, b, &errorCode);
+				if (0 == err)
+					printf("%lg / %lg = %lg\n", a, b, resDouble);
 				break;
 			case '%':
-				double rod(double a, double b, int *error) {
-					if (0 == b) {
-						**error = -1;
-						return 0;
-					}
-				printf("%f % %f = %f", a, b, a % b);
-					break;
+				resInt = mod((int)a, (int)b, &errorCode);
+				if (0 == errorCode)
+					printf("%lg %% %lg = %d\n", a, b, resInt);
+				break;
 	}
 				return 0;
 }
